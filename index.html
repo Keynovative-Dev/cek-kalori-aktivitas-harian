@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cek Kalori Aktivitas Harian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Cek Kalori Aktivitas Harian </h1>
+    <p>Masukkan data aktivitasmu untuk mengetahui berapa kalori yang terbakar!</p>
+
+    <label for="aktivitas">Pilih Aktivitas:</label>
+    <select id="aktivitas">
+      <option value="jalan">Jalan Kaki</option>
+      <option value="lari">Lari</option>
+      <option value="sepeda">Bersepeda</option>
+    </select>
+
+    <label for="durasi">Durasi (menit):</label>
+    <input type="number" id="durasi" placeholder="contoh: 30">
+
+    <button onclick="hitungKalori()">Hitung Kalori</button>
+    <div id="hasil"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
